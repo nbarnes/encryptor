@@ -9,37 +9,11 @@
     <p>Once it's encoded, you'll be able to share your message with anyone else who has the password.</p>
     <textarea id="message" rows="6" cols="60"></textarea>
     <br>
-    <button id="encrypt">Lock Down</button>
+    <button id="encrypt" onclick="encoder.protect()">Lock Down</button>
 
     <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/aes.js"></script>
 
-    <script>
-      var encoder = {
-        setMessage: function() {
+    <script src="src/encryptor.js"></script>
 
-        },
-        getPassword: function() {
-
-        },
-        setUrl: function() {
-
-        },
-        replaceMessageWithUrl: function () {
-
-        },
-        encrypt: function() {
-          cypher = CryptoJS.AES.encrypt(this.message, this.password)
-          console.log("Verified: " +
-            CryptoJS.AES.decrypt(cypher, this.password).toString(CryptoJS.enc.Utf8))
-          return cypher
-        },
-        protect: function() {
-          this.setMessage()
-          this.getPassword()
-          this.setUrl()
-          this.replaceMessageWithUrl()
-        }
-      }
-    </script>
   </body>
 </html>
