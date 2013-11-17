@@ -1,5 +1,5 @@
 
-var encoder = {
+var encryptor = {
 
   setMessage: function() {
     this.message = document.getElementById('message').value

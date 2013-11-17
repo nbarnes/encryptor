@@ -1,5 +1,5 @@
 
-var decoder = {
+var decryptor = {
 
   getPassword: function() {
     this.password = prompt("What's the word, bird?")
@@ -17,4 +17,4 @@ var decoder = {
 
 }
 
-document.getElementById('decrypt').onclick = function() { decoder.decrypt() }
+document.getElementById('decrypt').onclick = function() { decryptor.decrypt() }
